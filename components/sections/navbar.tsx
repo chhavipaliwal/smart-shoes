@@ -85,43 +85,7 @@ const Navbar = ({ session }: { session: any }) => {
       </NavbarContent>
 
       {/* Right Content */}
-      <NavbarContent className="hidden md:flex" justify="end">
-        {session ? (
-          <NavbarItem className="ml-2 !flex gap-2">
-            <Button
-              onPress={() => signOut()}
-              className="text-default-500"
-              radius="full"
-              variant="light"
-              color="danger"
-            >
-              Logout
-            </Button>
-          </NavbarItem>
-        ) : (
-          <NavbarItem className="ml-2 !flex gap-2">
-            <Button
-              className="text-default-500"
-              as={Link}
-              href="/auth/login"
-              radius="full"
-              variant="light"
-            >
-              Login
-            </Button>
-            <Button
-              color="primary"
-              endContent={<Icon icon="solar:alt-arrow-right-linear" />}
-              radius="full"
-              variant="flat"
-              as={Link}
-              href="/auth/register"
-            >
-              Get Started
-            </Button>
-          </NavbarItem>
-        )}
-      </NavbarContent>
+      {/* <j */}
 
       <NavbarMenuToggle className="text-default-400 md:hidden" />
 
