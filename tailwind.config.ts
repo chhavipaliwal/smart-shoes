@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import { heroui } from "@heroui/react";
+import { heroui } from '@heroui/react';
 
 const config = {
   content: [
@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -47,18 +47,124 @@ const config = {
         },
         dark: {
           colors: {
+            default: {
+              '50': '#131315',
+              '100': '#1e1e21',
+              '200': '#29292e',
+              '300': '#34343a',
+              '400': '#3f3f46',
+              '500': '#616166',
+              '600': '#828287',
+              '700': '#a4a4a7',
+              '800': '#c5c5c8',
+              '900': '#e7e7e8',
+              foreground: '#fff',
+              DEFAULT: '#3f3f46'
+            },
             primary: {
-              '50': '#254329',
-              '100': '#3f7145',
-              '200': '#599f61',
-              '300': '#73cd7d',
-              '400': '#93d89a',
-              '500': '#b2e4b8',
-              '600': '#d2efd5',
-              '700': '#f1faf2',
+              '50': '#002943',
+              '100': '#00416a',
+              '200': '#005891',
+              '300': '#0070b8',
+              '400': '#0088df',
+              '500': '#2d9de5',
+              '600': '#59b2ea',
+              '700': '#86c6f0',
+              '800': '#b3dbf5',
+              '900': '#dff0fb',
               foreground: '#000',
-              DEFAULT: '#599f61'
-            }
+              DEFAULT: '#0088df'
+            },
+            secondary: {
+              '50': '#4d4d4d',
+              '100': '#797979',
+              '200': '#a6a6a6',
+              '300': '#d2d2d2',
+              '400': '#ffffff',
+              '500': '#ffffff',
+              '600': '#ffffff',
+              '700': '#ffffff',
+              '800': '#ffffff',
+              '900': '#ffffff',
+              foreground: '#000',
+              DEFAULT: '#ffffff'
+            },
+            success: {
+              '50': '#073c1e',
+              '100': '#0b5f30',
+              '200': '#0f8341',
+              '300': '#13a653',
+              '400': '#17c964',
+              '500': '#40d27f',
+              '600': '#68dc9a',
+              '700': '#91e5b5',
+              '800': '#b9efd1',
+              '900': '#e2f8ec',
+              foreground: '#000',
+              DEFAULT: '#17c964'
+            },
+            warning: {
+              '50': '#4a320b',
+              '100': '#744e11',
+              '200': '#9f6b17',
+              '300': '#ca881e',
+              '400': '#f5a524',
+              '500': '#f7b54a',
+              '600': '#f9c571',
+              '700': '#fad497',
+              '800': '#fce4bd',
+              '900': '#fef4e4',
+              foreground: '#000',
+              DEFAULT: '#f5a524'
+            },
+            danger: {
+              '50': '#49051d',
+              '100': '#73092e',
+              '200': '#9e0c3e',
+              '300': '#c80f4f',
+              '400': '#f31260',
+              '500': '#f53b7c',
+              '600': '#f76598',
+              '700': '#f98eb3',
+              '800': '#fbb8cf',
+              '900': '#fee1eb',
+              foreground: '#000',
+              DEFAULT: '#f31260'
+            },
+            background: '#000000',
+            foreground: {
+              '50': '#4d4d4d',
+              '100': '#797979',
+              '200': '#a6a6a6',
+              '300': '#d2d2d2',
+              '400': '#ffffff',
+              '500': '#ffffff',
+              '600': '#ffffff',
+              '700': '#ffffff',
+              '800': '#ffffff',
+              '900': '#ffffff',
+              foreground: '#000',
+              DEFAULT: '#ffffff'
+            },
+            content1: {
+              DEFAULT: '#18181b',
+              foreground: '#fff'
+            },
+            content2: {
+              DEFAULT: '#27272a',
+              foreground: '#fff'
+            },
+            content3: {
+              DEFAULT: '#3f3f46',
+              foreground: '#fff'
+            },
+            content4: {
+              DEFAULT: '#52525b',
+              foreground: '#fff'
+            },
+            focus: '#006FEE',
+            overlay: '#ffffff',
+            divider: '#ffffff'
           }
         }
       },

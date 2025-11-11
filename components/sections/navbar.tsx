@@ -64,22 +64,22 @@ const Navbar = ({ session }: { session: any }) => {
         </NavbarItem>
         <NavbarItem>
           <Link className="text-default-500" href="/dashboard">
-            Dashboard
+            About
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-default-500" href="/contact">
-            Contact
+            Product
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-default-500" href="/about">
-            About Us
+            Dashboard
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className="text-default-500" href="/integration">
-            Integrations
+            How It Works
           </Link>
         </NavbarItem>
       </NavbarContent>

@@ -18,10 +18,10 @@ export default async function RootLayout({
 }>) {
   const session = await auth();
   return (
-    <html lang="en" suppressHydrationWarning className="light">
+    <html lang="en" suppressHydrationWarning className="dark">
       <body>
         <Providers>
-          <ThemeProvider attribute="class" defaultTheme="light">
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <Navbar session={session} />
             {children}
             <Sonner />
