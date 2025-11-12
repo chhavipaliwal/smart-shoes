@@ -41,7 +41,7 @@ const Navbar = ({ session }: { session: any }) => {
         base: cn('border-default-100', {
           'bg-default-200/50 dark:bg-default-100/50': isMenuOpen
         }),
-        wrapper: 'w-full justify-center',
+        wrapper: 'w-full max-w-none px-4 md:px-8 justify-between',
         item: 'hidden md:flex'
       }}
       height="100px"
