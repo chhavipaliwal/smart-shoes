@@ -17,6 +17,7 @@ import {
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
+import Image from 'next/image';
 
 const Navbar = ({ session }: { session: any }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -43,49 +44,93 @@ const Navbar = ({ session }: { session: any }) => {
         wrapper: 'w-full justify-center',
         item: 'hidden md:flex'
       }}
-      height="60px"
+      height="100px"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
       {/* Left Content */}
       <NavbarBrand>
-        <div className="rounded-full bg-foreground text-background">
-          <Avatar alt="logo" src="/logo.jpeg" />
+        <div className="flex items-center">
+          <Image
+            alt="Kysole Logo"
+            src="/logo.png"
+            className="object-contain"
+            width={100} // increase width
+            height={100} // increase height
+            priority
+          />
         </div>
-        <span className="ml-2 text-small font-medium">Devocode</span>
       </NavbarBrand>
 
       {/* Center Content */}
       <NavbarContent justify="center">
         <NavbarItem>
-          <Link className="text-default-500" href="/">
+          <Link className="text-secondary" href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-default-500" href="/dashboard">
+          <Link className="text-secondary" href="/dashboard">
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-default-500" href="/contact">
+          <Link className="text-secondary" href="/contact">
             Product
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-default-500" href="/about">
+          <Link className="text-secondary" href="/about">
             Dashboard
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-default-500" href="/integration">
+          <Link className="text-secondary" href="/integration">
             How It Works
           </Link>
         </NavbarItem>
       </NavbarContent>
 
       {/* Right Content */}
-      {/* <j */}
+
+      {/* Right Content */}
+      <NavbarContent className="hidden md:flex" justify="end">
+        {session ? (
+          <NavbarItem className="ml-2 !flex gap-2">
+            <Button
+              onPress={() => signOut()}
+              className="text-default-500"
+              radius="full"
+              variant="light"
+              color="danger"
+            >
+              Logout
+            </Button>
+          </NavbarItem>
+        ) : (
+          <NavbarItem className="ml-2 !flex gap-2">
+            <Button
+              color="secondary"
+              as={Link}
+              href="/auth/login"
+              radius="full"
+              variant="light"
+            >
+              <Icon icon="ix:user-profile-filled" width="512" height="512" />
+            </Button>
+            <Button
+              color="primary"
+              endContent={<Icon icon="solar:alt-arrow-right-linear" />}
+              radius="full"
+              variant="solid"
+              as={Link}
+              href="/auth/register"
+            >
+              Buy Now
+            </Button>
+          </NavbarItem>
+        )}
+      </NavbarContent>
 
       <NavbarMenuToggle className="text-default-400 md:hidden" />
 
