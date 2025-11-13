@@ -70,17 +70,17 @@ const Navbar = ({ session }: { session: any }) => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="/dashboard">
+          <Link className="text-secondary" href="/about">
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="/contact">
+          <Link className="text-secondary" href="/Product">
             Product
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="/about">
+          <Link className="text-secondary" href="/dashboard">
             Dashboard
           </Link>
         </NavbarItem>

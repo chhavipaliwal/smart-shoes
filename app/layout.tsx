@@ -5,6 +5,8 @@ import Sonner from '@/components/providers';
 import Navbar from '@/components/sections/navbar';
 import { Providers } from './providers';
 import { auth } from '@/auth';
+import SpotlightCursor from './cursor';
+import CanvasCursor from './canvasCursor';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -25,6 +27,8 @@ export default async function RootLayout({
             <Navbar session={session} />
             {children}
             <Sonner />
+            {/* <SpotlightCursor /> */}
+            <CanvasCursor />
           </ThemeProvider>
         </Providers>
       </body>
