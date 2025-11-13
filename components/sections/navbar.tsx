@@ -85,7 +85,7 @@ const Navbar = ({ session }: { session: any }) => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="/integration">
+          <Link className="text-secondary" href="/how-it-works">
             How It Works
           </Link>
         </NavbarItem>
