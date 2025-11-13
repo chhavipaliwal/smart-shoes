@@ -14,7 +14,7 @@ export default function KysoleProductShowcase() {
             <div className="w-full max-w-sm rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-8">
               <div className="mb-6 flex h-64 items-center justify-center overflow-hidden rounded-xl bg-slate-700">
                 <Image
-                  src="/kysole-model-x1-smart-shoe-with-glowing-blue-light.jpg"
+                  src="/3d-design.png"
                   alt="Kysole Model X1"
                   width={304}
                   height={256}

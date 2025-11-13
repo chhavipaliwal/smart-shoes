@@ -14,7 +14,7 @@ export default function KysoleTestimonial() {
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-3xl"></div>
               <div className="relative overflow-hidden rounded-lg border border-cyan-500/30 shadow-2xl">
                 <Image
-                  src="/founder.jpg"
+                  src="/3.png"
                   alt="Elara Vance, Founder & Chief Innovator"
                   width={500}
                   height={600}
@@ -27,15 +27,6 @@ export default function KysoleTestimonial() {
 
           {/* Quote Section */}
           <div className="flex flex-col justify-center">
-            <div className="mb-6">
-              <svg
-                className="mb-4 h-12 w-12 text-cyan-400"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.716-5-7-5-6 0-8.812 19.036-9 24h15c0-1 0-4.5-1-6.5-.712-1.567-1.382-1.094-1.488-2.972-.116-1.966-1.48-2.5-4.5-2.5s-4 .5-4 4c0 1 0 8 7 8z" />
-              </svg>
-            </div>
             <p className="mb-8 text-lg italic leading-relaxed text-gray-300 md:text-xl">
               We&apos;re not just creating a product; we&apos;re architecting a
               new relationship between humans and their environment. Kysole is

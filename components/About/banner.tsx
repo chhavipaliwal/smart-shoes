@@ -6,7 +6,7 @@ export default function KysoleAbout() {
   return (
     <div className="bg-black">
       {/* Hero Section */}
-      <div className="relative flex min-h-96 items-center justify-center overflow-hidden px-4 py-20">
+      <div className="relative flex h-screen items-center justify-center overflow-hidden px-4 md:px-8 lg:px-16">
         {/* Animated background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-transparent" />
         <div className="absolute inset-0 opacity-30">
@@ -15,13 +15,13 @@ export default function KysoleAbout() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <h1 className="mb-6 text-5xl font-bold tracking-wider text-white md:text-7xl">
+        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+          <h1 className="mb-6 text-5xl font-bold tracking-wider text-white md:text-7xl lg:text-8xl">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               WE ARE KYSOLE
             </span>
           </h1>
-          <p className="text-xl leading-relaxed text-gray-300 md:text-2xl">
+          <p className="text-xl leading-relaxed text-gray-300 md:text-2xl lg:text-3xl">
             Engineering the next leap in human movement, where technology and
             biology move as one.
           </p>
@@ -33,18 +33,18 @@ export default function KysoleAbout() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* Text Content */}
           <div className="space-y-6">
-            <h2 className="mb-8 text-4xl font-bold text-white md:text-5xl">
+            <h2 className="mb-8 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
               Our Genesis
             </h2>
 
-            <p className="text-lg leading-relaxed text-gray-300">
+            <p className="text-lg leading-relaxed text-gray-300 md:text-xl lg:text-2xl">
               Kysole was born from a simple yet profound question: what if our
               footwear could do more than just protect our feet? What if it
               could enhance our lives, connect us to our health, and keep us
               safe in a seamless, intuitive way?
             </p>
 
-            <p className="text-lg leading-relaxed text-gray-300">
+            <p className="text-lg leading-relaxed text-gray-300 md:text-xl lg:text-2xl">
               We are a collective of bio-engineers, data scientists, and
               visionary designers united by a passion for innovation. We
               don&apos;t just build smart shoes; we craft intelligent companions
@@ -54,7 +54,7 @@ export default function KysoleAbout() {
           </div>
 
           {/* Image */}
-          <div className="relative h-96 min-h-96 md:h-full">
+          <div className="relative h-96 md:h-[600px] lg:h-[700px]">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-xl" />
             <div className="relative h-full w-full overflow-hidden rounded-2xl border border-cyan-500/30 bg-black/50 backdrop-blur-sm">
               <Image
